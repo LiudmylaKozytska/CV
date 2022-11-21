@@ -1,0 +1,106 @@
+.hero__container--photo {
+    width: 100%;
+    padding: 50px 0;
+    background-color: $color-accent;
+
+    @include flex-center;
+    
+    @media screen and (min-width: 768px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.hero__container--content {
+    padding: 20px;
+    padding-bottom: 150px;
+
+    @media screen and (min-width:$tablet) {
+        width: 50%;
+        padding: 120px 20px;
+    }
+}
+
+.hero__title {
+    font-size: 25px;
+    letter-spacing: 0.04em;
+
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 35px;
+        letter-spacing: 0.02em;
+    }
+}
+
+.hero__text {
+    font-size: 20px;
+    font-style: italic;
+
+    text-align: center;
+    margin: 0;
+}
+
+.hero__list {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+
+    @include none-style;
+
+    @media screen and (min-width:$tablet) {
+    margin: 35px 0px;
+    text-align: left;
+    }
+}
+
+.hero__link {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 550;
+    
+}
+
+.hero__link--decor {
+    font-weight: 400;
+}
+
+.hero__soc-list {
+    @include none-style;
+    @include flex-center;
+    
+    gap: 3px;
+    margin-bottom: 35px;
+
+    @media screen and (min-width:$tablet) {
+        justify-content: start;
+        margin-bottom: 50px;
+    }
+}
+
+.hero__soc-link {
+    display: flex;
+    align-items: baseline;
+    padding: 5px;
+}
+
+.hero__soc-icon {
+    fill:$color-text;
+    margin-right: 5px;
+}
+
+.hero__link-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row; 
+    }
+}

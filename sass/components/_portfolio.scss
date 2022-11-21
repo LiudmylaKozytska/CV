@@ -1,0 +1,28 @@
+.portfolio__section {
+    padding: 20px;
+
+    @media screen and (min-width:$tablet) {
+        width: 50%;
+        padding: 50px 20px;
+    }
+}
+
+.portfolio__list {
+    @include none-style;
+
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.portfolio__link {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.portfolio__link-name {
+    
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header__section">
+        <nav class="header__nav">
+            <a class="header__logo" href="#">Curriculum Vitae</a>
+            <div class="header__menu js-menu-container" id="menu-container">
+            <button type="button" class="header__button--menu js-close-menu">
+                <svg class="header__icon" width="40px" height="40px">
+                    <use href="./image/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <ul class="header__list">
+                    <li>
+                        <a class="header__link" href="#about">o mnie</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#skills">résumé</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#footer">kontakt</a>
+                    </li>
+                </ul>        
+        </div>
+        </nav>
+        <button type="button" class="header__button" href="">pobierz CV</button>
+        <button type="button" class="header__button--menu js-open-menu" aria-controls="menu-container">
+            <svg class="header__icon" width="40px" height="40px">
+                <use href="./image/icons.svg#burger-menu"></use>
+            </svg>
+        </button>                
+    </header>  
+    <main>
+        <section class="hero__section">
+            <div class="hero__container--photo">
+                <img class="hero__image" srcset="./image/mob-photo.jpg 1x, ./image/mob-photo@2x.jpg 2x" 
+                    src="./image/mob-photo.jpg"
+                    alt="Moje Zdjecie">
+            </div>
+            <div class="hero__container--content">
+            <h1 class="hero__title">Liudmyla Kozytska</h1>
+            <p class="hero__text">Full-Stack Developer</p>
+            <address>
+                <ul class="hero__list">
+                    <li>
+                        <a class="hero__link" href="tel:+48735461447">Telefon: <span class="hero__link--decor">735-461-447</span></a>
+                    </li>
+                    <li>
+                        <a class="hero__link" href="mailto:ludaanishchenko0512@gmail.com">E-mail: <span class="hero__link--decor">ludaanishchenko0512@gmail.com</span></a>
+                    </li>
+                    <li>
+                        <a class="hero__link" href="https://goo.gl/maps/m5YUXoQzTC1RKA9C9">Adres: <span class="hero__link--decor">Świdnica</span></a>
+                    </li>
+                </ul>
+                <ul class="hero__soc-list">
+                    <li>
+                        <a class="hero__soc-link" href="">
+                            <svg class="hero__soc-icon" width="15px" height="15px">
+                                <use href="./image/icons.svg#icon-linkedin"></use>
+                            </svg>LinkedIn</a>
+                    </li>
+                    <li>
+                        <a class="hero__soc-link" href="https://www.facebook.com/luda.anishchenko/">
+                            <svg class="hero__soc-icon" width="15px" height="15px">
+                                <use href="./image/icons.svg#icon-facebook"></use>
+                            </svg>Facebook</a>
+                    </li>
+                    <li>
+                        <a class="hero__soc-link" href="https://www.instagram.com/liudmylakozytska/">
+                            <svg class="hero__soc-icon" width="15px" height="15px">
+                                <use href="./image/icons.svg#icon-instagram"></use>
+                            </svg>Instagram</a>
+                    </li>
+                </ul>
+            </address>
+            <a class="hero__link-arrow" href="#skills">Przeglądaj CV 
+                <svg class="hero__icon-arrow" width="20px" height="20px">
+                    <use href="./image/icons.svg#arrow-down"></use>
+                </svg>
+            </a>
+            </div>
+        </section>
+        <section class="about__section" id="about">
+            <h2 class="section__title">O mnie</h2>
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, corporis perspiciatis veniam deleniti fuga voluptatem? Molestiae eligendi distinctio nam unde, cumque sit praesentium vel accusamus libero ducimus illum eos est eius temporibus? Excepturi blanditiis, maxime, accusamus praesentium suscipit optio nihil tenetur perferendis voluptatum nemo distinctio hic quas, ipsum tempora. Labore, repudiandae saepe!</p>
+        </section>
+        <section class="skills__section" id="skills">
+            <h2 class="section__title">Wiedza i zdolności</h2>
+            <p class="skills__text">Hard skills</p>
+            <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS</li>
+                <li class="skills__item">SCSS</li>
+                <li class="skills__item">microsoft office</li>
+                <li class="skills__item">subject GT</li>
+                <li class="skills__item">trans EU</li>
+            </ul>
+            <p class="skills__text">Soft skills</p>
+            <ul class="skills__list">
+                <li class="skills__item">Komunikatywność</li>
+                <li class="skills__item">chęć nauki i dążenie do samorozwoju</li>
+                <li class="skills__item">umiejętność radzenia sobie ze stresem</li>
+                <li class="skills__item">cierpliwość</li>
+                <li class="skills__item">empatia</li>
+                <li class="skills__item">wysoka kultura osobista</li>
+                <li class="skills__item">samodzielność</li>
+                <li class="skills__item">umiejętność adaptacji do nowych warunków</li>
+            </ul>
+            <p class="skills__text">Języki</p>
+            <ul class="skills__list">
+                <li class="skills__item">ukraiński (ojczysty)</li>
+                <li class="skills__item">polski (C1)</li>
+                <li class="skills__item">rosyjski (C1)</li>
+                <li class="skills__item">angielski (B1)</li>
+            </ul>
+        </section>
+        <section class="experience__section">
+            <h2 class="section__title">Praktyka zawodu</h2>
+            <p class="experience__text--primary">2019-2022</p>
+            <p class="experience__text--secondary">Wilhelm-Trans Transport Towarowy Anna Krupa</p>
+            <p class="experience__text">Specjalista ds. rowoju i planowania transportu</p>
+        </section>
+        <section class="education__section">
+            <h2 class="section__title">Edukacja</h2>
+            <ul>
+                <h3 class="secondary__title">Wykształcenie wyższe</h3>
+                <ul class="education__list">
+                    <li class="education__item--years">2011-2017</li>
+                    <li class="education__item--name">Wschodnioeuropejski Uniwersytet Narodowy im. Łesi Ukrainki w Łucku</li>
+                    <li class="education__item--direction">Ekologia i ochrona środowiska</li>
+                    <li class="education__item--degree">Tytuł magistra</li>
+                </ul>
+                <ul class="education__list">
+                    <li class="education__item--years">2012-2018</li>
+                    <li class="education__item--name">Wschodnioeuropejski Uniwersytet Narodowy im. Łesi Ukrainki w Łucku</li>
+                    <li class="education__item--direction">Prawo</li>
+                    <li class="education__item--degree">Licencjat</li>
+                </ul>
+                <h3 class="secondary__title">Kursy i szkolenia</h3>
+                <ul class="education__list">
+                    <li class="education__item--years">2021-2023</li>
+                    <li class="education__item--name">Szkoła policealna Teb Edukacja</li>
+                    <li class="education__item--direction">Technik Administracji</li>
+                </ul>
+                <ul class="education__list">
+                    <li class="education__item--years">2022-2023</li>
+                    <li class="education__item--name">GoIt</li>
+                    <li class="education__item--direction">Full-Stack Developer</li>
+                </ul>
+            </ul>
+        </section>
+        <section class="portfolio__section">
+            <h2 class="section__title">Portfolio</h2>
+            <ul class="portfolio__list" >
+                <li>
+                    <a class="portfolio__link" href="https://liudmylakozytska.github.io/goit-markup-hw-08/"><span class="portfolio__link-name">WebStudio</span>
+                        <picture>
+                            <source srcset="./image/mob-web_studio.jpg 1x, ./image/mob-web_studio@2x.jpg 2x" type="image/jpeg"
+                                media="(max-width: 767px)">
+                            <source srcset="./image/tab-web_studio.jpg 1x, ./image/tab-web_studio@2x.jpg 2x" type="image/jpeg"
+                                media="(max-width: 1199px)">
+                            <source srcset="./image/desk-web_studio.jpg 1x, ./image/desk-web_studio@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)">
+                            <img src="./image/mob-web_studio.jpg" alt="web studio">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer__section" id="footer">
+        <h2 class="section__title">Kontakt</h2>
+        <address>
+            <ul class="footer__list">
+                <li>
+                    <a class="hero__link" href="tel:+48735461447">Telefon: <span class="hero__link--decor">735-461-447</span></a>
+                </li>
+                <li>
+                    <a class="hero__link" href="mailto:ludaanishchenko0512@gmail.com">E-mail: <span
+                            class="hero__link--decor">ludaanishchenko0512@gmail.com</span></a>
+                </li>
+                <li>
+                    <a class="hero__link" href="https://goo.gl/maps/m5YUXoQzTC1RKA9C9">Adres: <span
+                            class="hero__link--decor">Świdnica</span></a>
+                </li>
+            </ul>
+            <ul class="footer__soc-list">
+                <li>
+                    <a class="footer__soc-link" href="">
+                        <svg class="footer__soc-icon" width="20px" height="20px">
+                            <use href="./image/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__soc-link" href="https://www.facebook.com/luda.anishchenko/">
+                        <svg class="footer__soc-icon" width="20px" height="20px">
+                            <use href="./image/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__soc-link" href="https://www.instagram.com/liudmylakozytska/">
+                        <svg class="footer__soc-icon" width="20px" height="20px">
+                            <use href="./image/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </address>
+    </footer>
+    <script src="./js/mobile.js"></script>
+</body>
+</html>

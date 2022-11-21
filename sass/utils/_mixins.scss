@@ -1,0 +1,17 @@
+@mixin none-style {
+    list-style-type: none;
+    display: block;
+}
+
+@mixin none-decoration {
+    text-decoration: none;
+    font-style: normal;
+    color: currentColor;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
