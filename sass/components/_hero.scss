@@ -63,6 +63,9 @@
     font-size: 15px;
     font-weight: 550;
     
+    @media screen and (min-width:$tablet) {
+        font-size: 20px;
+    }
 }
 
 .hero__link--decor {
@@ -86,10 +89,14 @@
     display: flex;
     align-items: baseline;
     padding: 5px;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 20px;
+    }
 }
 
 .hero__soc-icon {
-    fill:$color-text;
+    fill: $color-text;
     margin-right: 5px;
 }
 
@@ -102,5 +109,6 @@
 
     @media screen and (min-width:$tablet) {
         flex-direction: row; 
+        font-size: 20px;
     }
 }
